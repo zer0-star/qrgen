@@ -1,4 +1,4 @@
-const CACHE = '688735f1d0ed2dd1282edac56ccac40683ca213af8617910126a99b5beb49801'
+const CACHE = 'd4cd9e748e4a41e5485dc4b83adbcf87d3e44ec7ac3eef98a6e236db82adf3ed'
 const PRECACHE_URLS = [
   '/assets/nunito-v16-latin-ext_latin-700_6e483e301899a8ab59b328ae7f155c29.woff',
   '/assets/nunito-v16-latin-ext_latin-700_7ba344b9011888663eea78e71fc1af79.woff2',
