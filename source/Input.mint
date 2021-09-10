@@ -1,7 +1,19 @@
 component Input {
   connect State exposing { grade, clas, num, normalTemp, currentTemp, hasCough, hasSoreThroat, hasFatigue, message, setGrade, setClass, setNum, setNormalTemp, setCurrentTemp, setCough, setSoreThroat, setFatigue, setMessage }
 
+  connect Ui exposing { mobile }
+
   state errors : Map(String, Array(String)) = Map.empty()
+
+
+  get size : Ui.Size {
+    if (mobile) {
+      Ui.Size::Px(42)
+    } else {
+      Ui.Size::Inherit
+    }
+  }
+
 
   fun validate(callBack: Function(Promise(Never, Void))) {
     sequence {
