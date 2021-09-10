@@ -112,7 +112,7 @@ component Input {
                         Ui.ListItem::Item(
                           matchString = "#{x}#{y}",
                           key = "#{x}#{y}",
-                          content = <{ "#{x}.#{y}" }>
+                          content = <Ui.Content size={size}>"#{x}.#{y}"</Ui.Content>
                         )
                       })
                  })
@@ -136,7 +136,7 @@ component Input {
                         Ui.ListItem::Item(
                           matchString = "#{x}#{y}",
                           key = "#{x}#{y}",
-                          content = <{ "#{x}.#{y}" }>
+                          content = <Ui.Content size={size}>"#{x}.#{y}"</Ui.Content>
                         )
                       })
                  })
