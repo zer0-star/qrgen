@@ -6,6 +6,12 @@ component Input {
   state errors : Map(String, Array(String)) = Map.empty()
 
 
+  style tempItem {
+    font-size: #{Ui.Size.toString(size)};
+    white-space: nowrap;
+  }
+
+
   get size : Ui.Size {
     if (mobile) {
       Ui.Size::Px(42)
@@ -112,7 +118,7 @@ component Input {
                         Ui.ListItem::Item(
                           matchString = "#{x}#{y}",
                           key = "#{x}#{y}",
-                          content = <Ui.Content size={size}>"#{x}.#{y}"</Ui.Content>
+                          content = <div::tempItem>"#{x}.#{y}"</div>
                         )
                       })
                  })
@@ -136,7 +142,7 @@ component Input {
                         Ui.ListItem::Item(
                           matchString = "#{x}#{y}",
                           key = "#{x}#{y}",
-                          content = <Ui.Content size={size}>"#{x}.#{y}"</Ui.Content>
+                          content = <div::tempItem>"#{x}.#{y}"</div>
                         )
                       })
                  })
